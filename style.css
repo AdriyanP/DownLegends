@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    background-color: #FF6F4B;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0; left: 0;
+    z-index: 999;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #fff9f7;
+    display: inline-block;
+}
+
+.logo h1 span {
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff3e6;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.hero-text h2 span {
+    color: #FF6F4B;
+}
+
+.cta-button {
+    background-color: #FF6F4B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e35d41;
+}
+
+/* Media Section */
+.media-section {
+    padding: 60px 40px;
+    background-color: #fae4cd;
+    text-align: center;
+}
+
+.media-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #FF6F4B;
+}
+
+.social-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-list li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FF6F4B;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-list li a:hover {
+    background-color: #e35d41;
+}
+
+/* Section Most Popular */
+.most-popular {
+    padding: 60px 40px;
+    background-color: #fae4cd;
+    text-align: center;
+}
+
+.most-popular h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #FF6F4B;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.card-info p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Orange Menu Box */
+.menu-box {
+    position: sticky;
+    top: 70px;
+    z-index: 998;
+    right: 40px;
+    background-color: #FF6F4B;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    float: right;
+}
+
+.menu-box button {
+    background-color: #fff;
+    color: #FF6F4B;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Orange Menu Box */
+.menu-box {
+    position: fixed; /* Buat posisi relatif terhadap container */
+    top: 70px; /* Geser menu tepat di bawah tombol Menu */
+    right: 30px; /* Posisi sejajar dengan tombol Menu */
+    background-color: #FF6F4B;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Supaya menu muncul di depan elemen lain */
+}
+
+.menu-box.sticky {
+    position: fixed;
+    top: 70px; /* Sesuaikan dengan posisi header atau tombol Menu */
+    right: 30px;
+    background-color: #FF6F4B;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000; /* Supaya tetap berada di atas elemen lain */
+}
+
+.menu-box button:hover {
+    background-color: #e35d41;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    gap: 40px;
+}
+
+.about-image img {
+    max-width: 100px;
+    border-radius: 1px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #FF6F4B;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contoh style untuk tombol About */
+#about-button a {
+    text-decoration: none;
+    color: #FF6F4B; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+  }
+  
+  /* Footer Styles */
+.footer {
+    background-color: #FF6F4B; 
+    color: #fff; 
+    padding: 20px ;
+    text-align: center;
+    font-size: 14px;
+    margin-top:auto;
+}
+
+.berita {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.moba-master {
+    font-size: 15px;
+    margin-bottom: 10px;    
+}
+
+.moba-master a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 850;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #c45308; 
+}
