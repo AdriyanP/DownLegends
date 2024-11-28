@@ -14,7 +14,7 @@ document.getElementById('about-button').addEventListener('click', function() {
 
 // Navigate to Berita (News)
 document.getElementById('news-button').addEventListener('click', function() {
-    window.location.href = "simple/home.html"; // Replace with the actual news link
+    window.location.href = "https://dhafidwk.github.io/MobaMaster/"; // Replace with the actual news link
 });
 
 // Smooth scroll to About section from the black menu
